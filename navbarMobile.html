@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="
+https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css" />
+</head>
+<style>
+    body {
+        margin: 0;
+        padding: 0;
+    }
+
+    nav {
+        width: 15vh;
+        height: 100vh;
+        background-color:wheat;
+        display: flex;
+        flex-wrap: wrap;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        border: 1px solid white;
+        box-sizing: border-box;
+        border-radius: 10px;
+    }
+
+    img{
+        width: inherit;
+        height: inherit;
+    }
+    .logo-container {
+        width: 100px;
+        height: 100px;
+        background-color: black;
+        display: none;
+        background-color: transparent;
+        opacity: 1;
+    }
+
+    ul {
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        list-style-type: none;
+        padding: 0;
+    }
+
+    a {
+        text-decoration: none;
+        display: flex;
+        align-items: center;
+        gap: 30px;
+    }
+
+    .disc-span {
+        display: none;
+    }
+
+    ul>li {
+        padding: 2vh;
+    }
+
+    @media (687px <=width <1200px) {
+        nav {
+            width: 35vh;
+        }
+
+        .logo-container {
+            display: none;
+        }
+
+        .disc-span {
+            display: inline-flex;
+        }
+    }
+
+    @media (1200px <=width) {
+        nav {
+            width: 100%;
+            height: auto;
+            flex-direction: row;
+            justify-content: space-between;
+        }
+
+        .logo-container {
+            flex: 0 0 auto;
+            display: inline-flex;
+            margin: 10px;
+        }
+
+        ul {
+            flex: 0 0 50%;
+            flex-direction: row;
+            justify-content: space-around;
+        }
+    }
+</style>
+
+<body>
+    <nav>
+        <div class="logo-container">
+            <img src="https://static.vecteezy.com/system/resources/previews/023/654/784/non_2x/golden-logo-template-free-png.png" alt="" />
+        </div>
+        <ul>
+            <li>
+                <a href="">
+                    <span class="icons-span"><i class="fa fa-home fa-2x" aria-hidden="true"> </i></span><span
+                        class="disc-span">Home</span>
+                </a>
+            </li>
+            <li>
+                <a href="">
+                    <span class="icons-span"><i class="fa fa-map-marker fa-2x" aria-hidden="true"></i></span><span
+                        class="disc-span">Address</span></a>
+            </li>
+
+            <li>
+                <a href="">
+                    <span class="icons-span"><i class="fa fa-envelope fa-2x" aria-hidden="true"></i> </span><span
+                        class="disc-span">Contact</span></a>
+            </li>
+
+            <li>
+                <a href="">
+                    <span class="icons-span"><i class="fa fa-shopping-basket fa-2x" aria-hidden="true"></i> </span><span
+                        class="disc-span">Product</span></a>
+            </li>
+            <li>
+                <a href="">
+                    <span class="icons-span"><i class="fa fa-arrow-right fa-2x" aria-hidden="true"></i> </span><span
+                        class="disc-span">GoTo</span>
+                </a>
+            </li>
+        </ul>
+    </nav>
+</body>
+
+</html>
